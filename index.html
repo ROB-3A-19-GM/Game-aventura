@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <title>A jornada do anel</title>
+</head>
+
+<body>
+ <main>
+  
+
+    <div class="passo ativo" id="passo-0"> 
+        <img src="Cenario-passo0.webp" alt="" width=1200>
+        <p> Gandalf acabou de deixar sua casa após explicar a missão de destruir o Anel. Agora você deve decidir como se preparar para essa preconnect preparar para essa perigosa jornada</p>
+        <button class="btn-proximo" data-proximo="1">reúna suprimentos na loja do Sr, Bolger??</button>
+        <button class="btn-proximo" data-proximo="2">Parta imediatamente</button>
+    </div>
+    <div class="passo" id="passo-1">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200> 
+        <p> Você está na estrada rumo a Rivendell. À frente, vê sinais de perigo. Precisa decidir como proceder</p>
+        <button class="btn-proximo" data-proximo="3">Seguir pela estrada principal</button>
+        <button class="btn-proximo" data-proximo="4">Tentar um atalho pela floresta</button>
+    </div>
+    <div class = 'passo' id= 'passo-2'>
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+      <p>No meio da jornada, você se depara com os Nazgûl, servos sombrios de Sauron. Você precisa tomar uma decisão rapida </p>
+      <button class="btn-proximo" data-proximo="5">Esconder-se nas sombras</button>
+      <button class="btn-proximo" data-proximo="6">Enfretar os Nazgûl</button> 
+    </div>
+    <div class="passo" id="passo-3"> 
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <p> Após uma longa jornada, você chega á montanha da Perdição. A destruição do Anel está proxima, mas as forças de Sauron estão em seu encalço</p>
+        <button class="btn-proximo" data-proximo="7">Entrar furtivamente na Montanha da Perdição</button>
+        <button class="btn-proximo" data-proximo="8">Confiar em seus aliados para lutar enquanto você avança</button>
+    </div>
+    <div class="passo" id="passo-5">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <p>Você conseguiu se esconder nas sombras, mas perdeu um tempo valioso. Agora é hora de tomar uma decisão crítica para avançar na jornada.</p>
+        <button class="btn-proximo" data-proximo="3">Voltar para a Montanha da Perdição</button>
+        <button class="btn-proximo" data-proximo="4">Tentar encontrar outro caminho</button>
+    </div>
+    <div class="passo" id="passo-6">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <p>Você enfrentou os Nazgûl com bravura, mas isso causou muito desgaste. Agora, o caminho até a Montanha da Perdição será mais difícil.</p>
+        <button class="btn-proximo" data-proximo="3">Continuar em frente apesar das feridas</button>
+        <button class="btn-proximo" data-proximo="5">Buscar ajuda para se recuperar</button>
+    </div>
+    <div class="passo" id="passo-7">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <p>Você entrou furtivamente na Montanha da Perdição e está prestes a destruir o Anel. No entanto, os desafios finais estão à sua espera.</p>
+        <button class="btn-proximo" data-proximo="4">Final Heroico: O Anel é destruído, e a Terra-média é salva.</button>
+        <button class="btn-proximo" data-proximo="10">Final Trágico: O Anel não é destruído e a Terra-média cai na escuridão.</button>
+    </div>
+
+    <div class="passo" id="passo-4">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <p>O destino final</p>
+        <button class="btn-proximo" data-proximo="9"> Final Heroico:  O anel é destruido, Sauron é derrotado, e a terra-media pode descançar em paz</button>
+        <button class="btn-proximo" data-proximo="10">Final Tragico: Falhando em destruir o Anel Sauron recupera seu poder e a Terra-média cai na escuridão</button>
+    </div>
+
+    <div class="passo" id="passo-final-heroico">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <h2>Final Heroico</h2>
+        <p>O Anel foi destruído com sucesso! Sauron foi derrotado, e a Terra-média pode finalmente descansar em paz. Sua coragem e determinação salvaram o mundo.</p>
+        <button class="btn-reiniciar" onclick="reiniciarJogo()">Jogar Novamente</button>
+    </div>
+
+    <div class="passo" id="passo-final-tragico">
+        <img src="Cenario-passo0.webp" alt="Conclusão-da-aventura" width=1200>
+        <h2>Final Trágico</h2>
+        <p>O Anel não foi destruído. Sauron recuperou seu poder, e a Terra-média caiu na escuridão. A jornada chegou ao fim, mas sua bravura será lembrada.</p>
+        <button class="btn-reiniciar" onclick="reiniciarJogo()">Jogar Novamente</button>
+    </div>
+ </main>
+   <script src="script.js"></script>
+    
+</body>
+</html>
